@@ -26,7 +26,7 @@ Get property or return undefined if it doesn't exist
 
 	hasproperties.get(testObject, 'b', 'c'); //2
 	hasproperties.get(testObject, 'b', 'd'); //undefined
-	hasproperties.getFromList(testObject, [ 'b', 'c' ] ; //2
+	hasproperties.getFromList(testObject, [ 'b', 'c' ] ); //2
 
 
 ### Browser
