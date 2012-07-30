@@ -6,28 +6,28 @@ This simple Javascript module provides functions to recursively check if a given
 
 ### Node.js
 Check if object and subobjects contain property
-has(object, ...propertyNames)
-hasFromList(object, propertyNameList)
+	has(object, ...propertyNames)
+	hasFromList(object, propertyNameList)
 
 Get property or return undefined if it doesn't exist
-get(object, ...propertyNames)
-getFromList(object, propertyNameList)
+	get(object, ...propertyNames)
+	getFromList(object, propertyNameList)
 
 #### Example
 
-var hasproperties = require('./hasproperties.js');
-var testObject = { a: 1, b: { c: 2 } };
-
-hasproperties.has(testObject, 'b', 'c'); //true
-hasproperties.has(testObject, 'b', 'd'); //false
-hasproperties.has(testObject, 'b', 'd', 'e'); //false
+	var hasproperties = require('./hasproperties.js');
+	var testObject = { a: 1, b: { c: 2 } };
+	
+	hasproperties.has(testObject, 'b', 'c'); //true
+	hasproperties.has(testObject, 'b', 'd'); //false
+	hasproperties.has(testObject, 'b', 'd', 'e'); //false
 
 
 ### Browser
 Check if object and subobjects contain property
-hasProperty(object, ...propertyNames)
-hasPropertyFromList(object, propertyNameList)
+	hasProperty(object, ...propertyNames)
+	hasPropertyFromList(object, propertyNameList)
 
 Get property or return undefined if it doesn't exist
-getProperty(object, ...propertyNames)
-getPropertyFromList(object, propertyNameList)
+	getProperty(object, ...propertyNames)
+	getPropertyFromList(object, propertyNameList)
